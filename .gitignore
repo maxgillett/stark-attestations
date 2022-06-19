@@ -1,6 +1,6 @@
 .DS_Store
 .env
 pkg/
-build/
+build/*
 node_modules
 target
