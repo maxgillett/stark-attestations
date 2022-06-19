@@ -1,0 +1,11 @@
+version: '3'
+services:
+  webpack:
+    image: rust-node
+    volumes:
+      - ./:/usr/src/app
+      - /node_modules
+    working_dir: /usr/src/app
+    command: bash -c "curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh && yarn start"
+    ports:
+      - "3000:3000"

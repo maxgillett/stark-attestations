@@ -1,0 +1,59 @@
+{
+  "name": "create-react-app-with-typescript",
+  "version": "5.0.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.8.3",
+    "@mui/x-data-grid": "^5.12.0",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@web3-react/core": "^8.0.10-beta.0",
+    "@web3-react/metamask": "^8.0.6-beta.0",
+    "@web3-react/network": "^8.0.5-beta.0",
+    "eth-proof": "^2.1.6",
+    "ipfs-http-client": "^57.0.1",
+    "moment": "^2.29.3",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "latest",
+    "typescript": "latest",
+    "web3": "^1.7.3"
+  },
+  "scripts": {
+    "start": "webpack serve --config webpack.config.ts --open",
+    "build": "webpack --mode production"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/plugin-transform-runtime": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@babel/preset-typescript": "^7.17.12",
+    "@babel/runtime": "^7.18.3",
+    "@wasm-tool/wasm-pack-plugin": "1.6.0",
+    "babel-loader": "^8.2.5",
+    "html-webpack-plugin": "^5.5.0",
+    "text-encoding": "^0.7.0",
+    "ts-node": "^10.8.1",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.1"
+  }
+}
