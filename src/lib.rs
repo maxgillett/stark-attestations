@@ -33,6 +33,11 @@ extern "C" {
 }
 
 #[wasm_bindgen]
+pub fn prove() {
+    // TODO
+}
+
+#[wasm_bindgen]
 pub fn verify(buffer: &Uint8Array) -> bool {
     // Load proof and public input data
     let b = buffer.to_vec();

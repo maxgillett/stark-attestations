@@ -53,8 +53,8 @@ const config: Configuration = {
   },
   mode: "production",
   performance: {
-    maxEntrypointSize: 8000000,
-    maxAssetSize: 8000000,
+    maxEntrypointSize: 10000000,
+    maxAssetSize: 10000000,
   },
   optimization: {
     minimize: false

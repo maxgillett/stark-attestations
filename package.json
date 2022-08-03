@@ -10,9 +10,11 @@
     "@mui/x-data-grid": "^5.12.0",
     "@types/react": "latest",
     "@types/react-dom": "latest",
+    "@vocdoni/storage-proofs-eth": "^0.4.1",
     "@web3-react/core": "^8.0.10-beta.0",
     "@web3-react/metamask": "^8.0.6-beta.0",
     "@web3-react/network": "^8.0.5-beta.0",
+    "@zoltu/ethereum-crypto": "^2.2.2",
     "eth-proof": "^2.1.6",
     "ipfs-http-client": "^57.0.1",
     "moment": "^2.29.3",
@@ -22,7 +24,8 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "latest",
     "typescript": "latest",
-    "web3": "^1.7.3"
+    "web3": "^1.7.3",
+    "web3-utils": "^1.7.4"
   },
   "scripts": {
     "start": "webpack serve --config webpack.config.ts --open",

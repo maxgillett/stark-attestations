@@ -237,8 +237,14 @@ func verify_storage_proof{range_check_ptr, bitwise_ptr: BitwiseBuiltin*}(
     let (balance_raw) = int_array_to_felt(storage_value.element, storage_value.element_size_words)
     let (den) = pow(2, (32 - 2*storage_value_len)*4)
     let balance = balance_raw / den
+    %{
+        print("%s" % ids.balance_raw)
+        print("%s" % ids.balance)
+        print("%s" % ids.token_balance_min)
+    %}
 
     # Check that balance in storage > minimum
+    #let (res) = is_le(token_balance_min, balance_raw)
     let (res) = is_le(token_balance_min, balance)
     assert res = 1
 

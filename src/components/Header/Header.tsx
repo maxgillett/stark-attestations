@@ -19,16 +19,8 @@ export default function Header() {
   const [openCreate, setOpenCreate] = React.useState(false);
   const [openFAQ, setOpenFAQ] = React.useState(false);
 
-  const handleClickOpenCreate = () => {
-    setOpenCreate(true);
-  };
-
   const handleClickOpenFAQ = () => {
     setOpenFAQ(true);
-  };
-
-  const handleCloseCreate = () => {
-    setOpenCreate(false);
   };
 
   const handleCloseFAQ = () => {
@@ -42,29 +34,12 @@ export default function Header() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             STARK Attestations
           </Typography>
-          <Button color="inherit" onClick={handleClickOpenCreate}>Create attestation</Button>
+          <Button color="inherit" href="/mint">Create attestation</Button>
           <Button color="inherit" onClick={handleClickOpenFAQ}>FAQ</Button>
           <Button color="inherit" href="https://github.com/maxgillett/stark-attestations" target="_blank">Github</Button>
           <EthereumWallet />
         </Toolbar>
       </AppBar>
-      <Dialog open={openCreate} onClose={handleCloseCreate}>
-        <DialogTitle>Coming soon</DialogTitle>
-        <DialogContent>
-          <DialogContentText>
-            To be notified when in-browser proof generation is available please subscribe below.
-          </DialogContentText>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleCloseCreate}>Cancel</Button>
-          <Button onClick=
-            {(e) => {
-              window.location.href = "mailto:max.gillett@gmail.com?subject=STARK Attestations - Proof generation requested";
-              e.preventDefault();
-              handleCloseCreate()
-            }}>Subscribe</Button>
-        </DialogActions>
-      </Dialog>
       <Dialog open={openFAQ} onClose={handleCloseFAQ}>
         <DialogTitle>Frequently Asked Questions</DialogTitle>
         <DialogContent sx={{ maxWidth: 800 }} >
