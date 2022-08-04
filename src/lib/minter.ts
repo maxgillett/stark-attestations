@@ -61,4 +61,7 @@ export async function buildProofInput(
       "v": v,
     }
   });
+
+  console.log(json);
+  return json;
 }
