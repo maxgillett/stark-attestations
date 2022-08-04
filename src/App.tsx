@@ -1,6 +1,6 @@
-import * as Wasm from '../pkg';
+
 import * as React from 'react';
-import Button from '@mui/material/Button';
+
 import { 
   BrowserRouter as Router,
   Routes,
